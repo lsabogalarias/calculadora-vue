@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora Vue</title>
+</head>
+<body>
+  <div id="app">
+    <!-- Aquí se renderizará nuestra calculadora -->
+    <div id="app">
+        <input type="number" v-model="num1">
+        <input type="number" v-model="num2">
+        
+        <button @click="add">Sumar</button>
+        <button @click="subtract">Restar</button>
+        <button @click="multiply">Multiplicar</button>
+        <button @click="divide">Dividir</button>
+        
+        <p>Resultado: {{ result }}</p>
+      </div>
+      
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
